@@ -12,30 +12,43 @@ export function Footer() {
               AI Automation Builder
             </p>
           </div>
+
+          {/* Email */}
           <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
             <Mail className="w-4 h-4" />
-            <Link href="mailto:hello@abyyai.com" className="text-sm">
+            <a
+              href="mailto:hello@abyyai.com"
+              className="text-sm"
+            >
               hello@abyyai.com
-            </Link>
+            </a>
           </div>
         </div>
+
         <div className="mt-8 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            2026 Akbar Juraev. All rights reserved.
+            © {new Date().getFullYear()} Akbar Juraev. All rights reserved.
           </p>
+
+          {/* Social Links */}
           <div className="flex items-center gap-6">
-            <Link
-              href="#"
+            <a
+              href="https://www.linkedin.com/in/akbarjuraev/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground text-sm hover:text-foreground transition-colors"
             >
               LinkedIn
-            </Link>
-            <Link
-              href="#"
+            </a>
+
+            <a
+              href="https://x.com/abyyaihustle"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground text-sm hover:text-foreground transition-colors"
             >
               X
-            </Link>
+            </a>
           </div>
         </div>
       </div>
