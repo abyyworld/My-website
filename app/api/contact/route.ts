@@ -13,7 +13,8 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: process.env.FROM_EMAIL || "Portfolio <onboarding@resend.dev>",
       to: [process.env.TO_EMAIL || ""],
-      reply_to: email,
+      replyTo: email,
+
       subject: `New message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
     });
